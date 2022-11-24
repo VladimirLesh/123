@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Danger
+  - Stop
+  - obstacle
+  - Prot
+  - FX
+  - BG_MUSIC
+  - BG_music_volume_text
+  - BG_music_volume_slider
+  - BG_fx_volume_slider
+  - BG_fx_volume_text
+  - Platform
+  - Well
+  - PlayerTrigger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - RegDollColl
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
