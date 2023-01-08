@@ -22,7 +22,6 @@ public class FXVolumeController : MonoBehaviour
 
     private void Awake()
     {
-        
         FX = FindObjectsOfType<AudioSource>();
 
         for (int i = 0; i < FX.Length; i++)

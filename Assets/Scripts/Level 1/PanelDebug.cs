@@ -10,8 +10,9 @@ public class PanelDebug : MonoBehaviour
     public WorldController WC;
     public WorldBuilder WB;
 
-    void Start()
+    private void Start()
     {
+        
     }
 
     // Update is called once per frame

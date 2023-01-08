@@ -22,11 +22,6 @@ public class WorldController : MonoBehaviour
         WorldController.instance = this;
     }
 
-    //private void OnDestroy()
-    //{
-    //    WorldController.instance = null;
-    //}
-
     void Start()
     {
         StartCoroutine(OnPlatformMovementCarutine());

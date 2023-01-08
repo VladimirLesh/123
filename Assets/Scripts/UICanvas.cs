@@ -16,6 +16,7 @@ public class UICanvas : MonoBehaviour
 
     void Start()
     {
+        panelDebug.SetActive(false);
         StartCoroutine(StartText());
     }
 

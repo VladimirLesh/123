@@ -5,19 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void ReloadScene(int SceneIndex)
+    public void ReloadScene(int sceneIndex)
     {
         SceneManager.LoadScene(1);
     }
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(1);
+        SceneTransition.SwitchToScene("Level 1");
     }
 
     public void LoadStartScene()
     {
-        SceneManager.LoadScene(0);
+        SceneTransition.SwitchToScene("Start");
         StaticBoolChangies.isScaleOn = false;
     }
 }
