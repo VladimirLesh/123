@@ -7,25 +7,23 @@ using UnityEngine.EventSystems;
 public class PlayerMove : MonoBehaviour
 {
     public Slide capsCollider;
-    public AudioSource audioJump;
-    public GameObject man;
-    public GameManager GM;
+    [SerializeField] private AudioSource audioJump;
+    // public GameObject man;
     public Jump JumpClass;
     private Vector3 end_pos;
     private Vector3 ofset = new Vector3(2, 0, 0);
-    //private float dist = 2f;
     public bool isMoveSide = false;
     private int line = 0;
   
     void Start()
     {
-        man = GetComponent<GameObject>();
+        // man = GetComponent<GameObject>();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.S)) ToSlide();
-        if (!GM.isDead && GM.isPlay)
+        if (!GameManager.GM.isDead && GameManager.GM.isPlay)
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
@@ -68,17 +66,17 @@ public class PlayerMove : MonoBehaviour
             }
 
             if (isMoveSide)
-        {
-            StartCoroutine(MoveLeftAndRight());
+            {
+                StartCoroutine(MoveLeftAndRight());
+            }
         }
-    }
 
-}
+    }
 
     public IEnumerator MoveLeftAndRight()
     {
         yield return new WaitForEndOfFrame();
-        if (!GM.isDead)
+        if (!GameManager.GM.isDead)
         {
             if (isMoveSide)
             {
@@ -148,20 +146,4 @@ public class PlayerMove : MonoBehaviour
         JumpClass.animator.SetTrigger("Slide");
         StartCoroutine(SlideNow());
     }
-
-    //private void MoveToLeft()
-    //{
-    //    transform.position = Vector3.Lerp(transform.position, transform.position + )
-    //}
-
-    //    void MoveSide(Vector3 endPos)
-    //    {
-    //        Sequence sequence = DOTween.Sequence();
-    //        sequence.Append(transform.DOMove(endPos,1).SetEase(Ease.Linear));
-    //        sequence.OnComplete(endMoveSide);
-    //    }
-    //    void endMoveSide()
-    //    {
-    //        isMoveSide = false;
-    //    }
 }

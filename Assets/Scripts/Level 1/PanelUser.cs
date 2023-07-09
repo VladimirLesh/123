@@ -12,8 +12,8 @@ public class PanelUser : MonoBehaviour
     {
         if (GameManager.GM.isPlay && !GameManager.GM.isDead)
         {
-            protText.text = $"{GameManager.GM.protCoint}";
-            timeText.text = $"{GameManager.GM.time}";
+            protText.text = $"{GameManager.GM.ProtCoint}";
+            timeText.text = $"{GameManager.GM.Time}";
         }
     }
 }

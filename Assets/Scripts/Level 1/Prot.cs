@@ -13,7 +13,7 @@ public class Prot : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             //Подсчет отчев протеина
-            GameManager.GM.protCoint++;
+            GameManager.GM.ProtCoint++;
             // эффект рассыпания протеина
             ps = Instantiate(boomProt, transform.position, boomProt.transform.rotation);
             Destroy(prot);

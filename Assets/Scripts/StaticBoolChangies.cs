@@ -5,4 +5,6 @@ using UnityEngine;
 public static class StaticBoolChangies
 {
     public static bool isScaleOn = false; // Toggle on start menu
+    public static int TryCount = 0;
+    
 }

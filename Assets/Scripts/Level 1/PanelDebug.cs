@@ -20,6 +20,6 @@ public class PanelDebug : MonoBehaviour
     {
         SpeedText.text = $"{WC.speed}";
         platformText.text = $"{WB.platformCount}";
-        timeText.text = $"{GM.time}";
+        timeText.text = $"{GM.Time}";
     }
 }

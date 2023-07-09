@@ -75,7 +75,6 @@ public class FXVolumeController : MonoBehaviour
             }
 
             this.FX[i].volume = this.volume;
-            Debug.Log(sliderObj[i]);
         }
         
     }

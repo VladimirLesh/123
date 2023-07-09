@@ -38,12 +38,13 @@ public class SwipeComtorller : MonoBehaviour, IBeginDragHandler, IDragHandler
                 {
                     JumpClass.JumpNow();
                 }
-                else
-                {
-                    PM.ToSlide();
-                }
+                //else
+                //{
+                //    PM.ToSlide();
+                //}
             }            
         }
+        else if (Mathf.Abs(eventData.delta.y) < 0) JumpClass.JumpNow();
 
         if (PM.isMoveSide)
         {

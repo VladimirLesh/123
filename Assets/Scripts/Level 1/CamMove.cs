@@ -6,7 +6,6 @@ public class CamMove : MonoBehaviour
 {
     public Transform deltaPos;
     private Vector3 currentCamPos;
-    [SerializeField] private GameManager GM;
     private CamMove camMove;
     private Rigidbody RB;
 

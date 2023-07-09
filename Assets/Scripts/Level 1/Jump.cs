@@ -6,7 +6,6 @@ public class Jump : MonoBehaviour
 {
     public Man man;
     public float jumpSpeed = 11;
-    public GameManager GM;
     public float rayLength;
 
     public Animator animator;
@@ -28,7 +27,7 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        if(GM.isPlay)
+        if(GameManager.GM.isPlay)
             if (Input.GetKeyDown(KeyCode.W))
             {
                 if (isGrounded(rayLength))

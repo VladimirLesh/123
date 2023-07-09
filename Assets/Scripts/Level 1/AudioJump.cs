@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AudioJump : MonoBehaviour
 {
-    public AudioSource sound;
+    [SerializeField] AudioSource _sound;
 
     private void Awake()
     {
-        sound = GetComponent<AudioSource>();        
+        _sound = GetComponent<AudioSource>();
     }
 
-    public void JumpSound() => sound.Play();
+    public void JumpSound() => _sound.Play();
     
 }

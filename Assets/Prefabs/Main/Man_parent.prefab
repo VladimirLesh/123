@@ -49,8 +49,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capsCollider: {fileID: 3233603921469512135}
   audioJump: {fileID: 1060245169068407933}
-  man: {fileID: 2962663027937630496}
-  GM: {fileID: 0}
   JumpClass: {fileID: 1060245169068407920}
   isMoveSide: 0
 --- !u!114 &1060245170211434173
@@ -77,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed3c8d286854432384074cf4c6dcb99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  _sound: {fileID: 1060245169068407933}
 --- !u!1001 &6915805359275645936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104,6 +102,26 @@ PrefabInstance:
     - target: {fileID: 5859006129633194810, guid: a5e2a9b24627542f2a55c13e66784446, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214237880922147444, guid: a5e2a9b24627542f2a55c13e66784446, type: 3}
+      propertyPath: m_Height
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214237880922147444, guid: a5e2a9b24627542f2a55c13e66784446, type: 3}
+      propertyPath: m_Radius
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214237880922147444, guid: a5e2a9b24627542f2a55c13e66784446, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214237880922147444, guid: a5e2a9b24627542f2a55c13e66784446, type: 3}
+      propertyPath: m_Center.y
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214237880922147444, guid: a5e2a9b24627542f2a55c13e66784446, type: 3}
+      propertyPath: m_Direction
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8567146142292886224, guid: a5e2a9b24627542f2a55c13e66784446, type: 3}
       propertyPath: m_Name

@@ -1941,7 +1941,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 5.7651486
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -2025,7 +2025,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673494717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2736,8 +2736,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   isPlay: 0
   isDead: 0
-  time: 0
-  protCoint: 0
+  Time: 0
+  ProtCoint: 0
 --- !u!1 &7157812339451086902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,7 +2870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7608385506940414132, guid: 8d2ebe397bcd54b65b12f958d0d503e5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7608385506940414133, guid: 8d2ebe397bcd54b65b12f958d0d503e5, type: 3}
       propertyPath: m_RootOrder
@@ -3085,7 +3085,8 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1180774036, guid: 304e3c990a3cc418d98c7f0001579d94, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 304e3c990a3cc418d98c7f0001579d94, type: 3}
 --- !u!1001 &7913399388716073834
 PrefabInstance:
